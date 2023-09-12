@@ -82,6 +82,7 @@ function App() {
   }
   
 
+  //update function for updating the todo after adding 
   const update=(event,obj)=>{
     if(obj.isEditOn){
       let buttonEle = event.target.parentNode
