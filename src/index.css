@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding : 0;
+}
+.page{
+    margin:0;
+    padding:0;
+    min-height: 100vh;
+    /* background-image: url("/background.jpg");
+    background-size:cover; */
+    background: linear-gradient(#d45d5d, #757bc1);
+    color:rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    
+}
+.main{
+    padding: 2rem;
+    width: 40vw;
+    height: 40vw;
+    min-height: 50vh;
+    min-width: 200px;
+    /* background-color:transparent; */
+    /* backdrop-filter:blur(100px); */
+    /* border: 2px solid white; */
+    background-color:rgba(255, 255, 255, 0.15);
+    border-radius: 1.5rem;
+    box-shadow: 2.5vw 2.5vw 1.5vw rgba(0, 0, 0, 0.2);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    overflow:scroll; 
+    gap:20px;
+    /* rgba(255, 255, 255, 0.25) */
+}
+
+.main::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+
+}
+
+
+.box1 {
+    font-size: 200%;
+    margin-top: 1.5rem;
+}
+
+.take-input{
+    margin: 0 1.5rem;
+    width:35vw;
+    min-width: 180px;
+    display :flex;
+
+}
+
+.take-input>input{
+    width: 100%;
+    padding: .5rem;
+    border: none;
+    border-radius: 2rem 0 0 2rem;
+    padding-left: 1rem;
+    outline: none;
+}
+.take-input>button{
+    border : none;
+    padding-right: .8rem;
+    border-radius: 0 2rem 2rem 0;
+    background-color: white;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+}
+
+.uncompletedBox{
+    width: 35vw;
+    min-width: 180px;
+    /* min-height: 120px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgba(255, 255, 255, 0.2);
+    border-radius:1rem;
+    padding: 2rem .5rem;
+}
+
+.completedBox{
+    width: 35vw;
+    min-width: 180px;
+    /* min-height: 120px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgba(255, 255, 255, 0.2);
+    border-radius:1rem;
+    padding: 2rem .5rem;
+   
+}
+
+.box-inpute{
+    background:none;
+    outline: none;
+    border: none;
+    font:initial;
+    width: 100%;
+    
+}
+
+.text-span{
+    width: 300px;
+    text-overflow: nowrap;
+}
+
+.mylable{
+    text-align: left;
+    width: 100%;
+    padding-left: 70px;
+    font-size:x-large;
+    margin-bottom: 15px;
+}
+
+
+
+.item{
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 7px  2rem;
+    padding: .5rem 1rem .5rem 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 7px;
+    color: rgb(101, 101, 101);
+}
+
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    min-width: 60px;
+    margin-left: 10px;
+}
+
+@media (max-width:800px) {
+    .main{
+        padding: 2rem;
+        width: 80%;
+        height: 90vw;
+        min-height: 50vh;
+        max-height: 70vh;
+        min-width: 200px;
+        background-color: rgba(255, 255, 255, 0.25);
+        border-radius: 1.5rem;
+        box-shadow: 2.5vw 2.5vw 1.5vw rgba(0, 0, 0, 0.5);
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        overflow:scroll;
+        
+    }
+
+    .box1 {
+        font-size: 150%;
+        margin-top: 1.5rem;
+    }
+
+    .take-input{
+        margin: 1.5rem;
+        width:70vw;
+        min-width: 180px;
+        display :flex;
+        gap: 0;
+    }
+
+    .completedBox{
+        width: 70vw;
+        min-width: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color:rgba(255, 255, 255, 0.25);
+        border-radius:1rem;
+        padding: 1rem .5rem;
+        gap:1rem;
+    }
+
+    .uncompletedBox{
+        width: 70vw;
+        min-width: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color:rgba(255, 255, 255, 0.25);
+        border-radius:1rem;
+        padding: 2rem .5rem;
+        gap:1rem;
+    }
+
+}
+
